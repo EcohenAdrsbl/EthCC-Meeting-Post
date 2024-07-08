@@ -27,7 +27,7 @@ const app = new Frog({
 app.frame('/', (c) => {
   const { buttonValue, inputText, status } = c
   return c.res({
-    image: "https://eth-cc-meeting-post-ecohenadrsbls-projects.vercel.app\EthCC 2024_all.png",
+    image: "https://imgur.com/a/bMe6dVe",
     intents: [
       <Button.Link href = "https://meetings.hubspot.com/asaf-nadler/meet-addressable-at-ethcc?uuid=09657fe5-b52e-4902-8131-defcdf4505b2">Waffels on us! Book a Meeting</Button.Link>,
     ],

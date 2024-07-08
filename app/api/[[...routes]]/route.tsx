@@ -7,10 +7,18 @@ import { handle } from 'frog/next'
 import { serveStatic } from 'frog/serve-static'
 
 const app = new Frog({
-  assetsPath: '/',
   basePath: '/api',
-  // Supply a Hub to enable frame verification.
-  // hub: neynar({ apiKey: 'NEYNAR_FROG_FM' })
+  // hub: neynar({ apiKey: process.env.NEYMAR_API_KEY }),
+  browserLocation: '/',
+  imageOptions: {
+    fonts: [
+      {
+        name: 'JetBrains Mono',
+        source: 'google',
+      },
+    ],
+  },
+  title: 'NEW',
 })
 
 // Uncomment to use Edge Runtime
